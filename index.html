@@ -1,316 +1,682 @@
-<!doctype html>
-<html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>안녕하세요. 신입 개발자 유동근입니다.</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
 
-<body class="grid grid-cols-1 gap-10 py-10">
-    <div class="fixed w-full h-2 top-0 bg-gradient-to-r from-cyan-500 to-blue-500"></div>
-    <div class="px-10">
-        <h1 class="text-5xl font-bold mb-5">안녕하세요. 저는 유동근입니다<span class="text-blue-500">.</span></h1>
-        <h2 class="w-full lg:w-1/2 font-semibold text-2xl whitespace-pre-line">
-            상상을 현실로 옮기는 백엔드 개발 지원자입니다.
-            부족하지만 꾸준히 배우며 성장하는 것을 좋아합니다.
-            어려운 문제와 마주쳐도 끈기있게 매달리고, 해결함으로써 성취감과 즐거움을 느낍니다.
-        </h2>
-        <br>
-        <table class="table-auto border-separate border-spacing-3 border-l">
-            <tbody>
-                <tr>
-                    <td class="w-32 relative">
-                        <h3 class="absolute top-0 font-bold">GitHub</h3>
-                    </td>
-                    <td>
-                        <a class="text-blue-400 flex gap-3" href="https://github.com/yudonggeun"><img
-                                src="https://img.shields.io/badge/Github-181717?logo=github&logoColor=white">https://github.com/yudonggeun</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="w-32 relative">
-                        <h3 class="absolute top-0 font-bold">Blog</h3>
-                    </td>
-                    <td class="flex flex-col gap-1">
-                        <a class="text-blue-400" href="https://note-ydg.tistory.com">https://note-ydg.tistory.com</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="w-32 relative">
-                        <h3 class="absolute top-0 font-bold text-start">Skill</h3>
-                    </td>
-                    <td class="grid grid-cols-1 gap-2">
-                        <div class="flex gap-5">
-                            <p class="w-20 text-gray-500">BackEnd</p>
-                            <div class="flex flex-col gap-1">
-                                <li>Java</li>
-                                <li>Spring Boot, Spring MVC, Spring Data JPA, Spring security</li>
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
 
-                            </div>
-                        </div>
-                        <div class="flex gap-5">
-                            <p class="w-20 text-gray-500">DevOps</p>
-                            <div class="flex flex-col gap-1">
-                                <li>AWS EC2, S3, RDS, CloudFrount, CodeDeploy</li>
-                                <li>Github Actions</li>
-                                <li>Docker, k8s(CKA)</li>
-                            </div>
-                        </div>
-                        <div class="flex gap-5">
-                            <p class="w-20 text-gray-500">FrontEnd</p>
-                            <div class="flex flex-col gap-1">
-                                <li>HTML5, tailwindcss, JS(ES6)</li>
-                                <li>React</li>
-                            </div>
-                        </div>
-                        <div class="flex gap-5">
-                            <p class="w-20 text-gray-500">Tools</p>
-                            <div class="flex flex-col gap-1">
-                                <li>IntelliJ, Visual Studio Code, vim</li>
-                                <li>Git, GitHub</li>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="w-32 relative">
-                        <h3 class="absolute top-0 font-bold">Education</h3>
-                    </td>
-                    <td>
-                        <div class="flex flex-col gap-1">
-                            <p class="text-gray-400">2017.3 ~ 2023.2</p>
-                            <p>한국공학대학교 컴퓨터공학전공 학사 졸업</p>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="w-32 relative">
-                        <h3 class="absolute top-0 font-bold">E-mail</h3>
-                    </td>
-                    <td>
-                        <p>ydong98@gmail.com</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="grid grid-cols-1 gap-5 border-t p-10">
-        <h1 class="font-bold text-2xl">업무 역량</h1>
-        <ol class="grid gap-5 px-2 border-l text-gray-500 list-none">
-            <li>AWS 기반에서 RDS, EC2, ELB, CloudFront를 활용하여 HTTPS 웹 서비스 배포 경험이 있습니다.</li>
-            <li>Github Actions, AWS S3, CodeDeploy를 활용하여 Docker기반의 배포 파이프라인을 구축한 경험이 있습니다.</li>
-            <li>Docker 환경에서 Kong, Nginx, Spring boot로 구성된 서비스를 배포, 운영 경험이 있습니다.</li>
-            <li>Spring Security, Google OAuth, Kakao SNS 로그인 구현 경험이 있습니다.</li>
-        </ol>
-    </div>
-    <div class="grid grid-cols-1 gap-5 border-t p-10">
-        <h1 class="font-bold text-2xl">인턴 경험</h1>
-        <div class="flex flex-col gap-5">
-            <div class="flex gap-5">
-                <div class="flex flex-col gap-2 w-1/3 border-l pl-3">
-                    <h3 class="font-bold">찰리컴퍼니</h3>
-                    <p class="text-gray-400">2022-9 ~ 2022-11, 3개월</p>
-                    <div>
-                        <span class="border rounded-md px-1 bg-gray-200 text-gray-600 text-sm">spring</span>
-                        <span class="border rounded-md px-1 bg-gray-200 text-gray-600 text-sm">mybatis</span>
-                        <span class="border rounded-md px-1 bg-gray-200 text-gray-600 text-sm">tailwindcss</span>
-                        <span class="border rounded-md px-1 bg-gray-200 text-gray-600 text-sm">chart.js</span>
-                    </div>
-                </div>
-                <div class="flex-1 flex flex-col gap-2">
-                    <h4 class="font-bold">Description</h4>
-                    <p class="text-gray-500">교내 스타트업에서 근로장학생으로 소개팅 앱 서비스 기능을 구현하였습니다. </p>
-                    <h4 class="font-bold">What did I do?</h4>
-                    <p class="text-gray-500">
-                        <li class="text-gray-500">Spring framework, mybatis 활용하여 게시글, 댓글, 대댓글 CRUD 기능 구현</li>
-                        <li class="text-gray-500">서비스 가입 심사, 악성 유저 신고관리 백오피스 API 개발</li>
-                        <li class="text-gray-500">서비스 가입/탈퇴자 통계 데이터 API 개발</li>
-                        <li class="text-gray-500">서비스 활성화 추이를 확인하기 위한 가입/탈퇴자 통계 반응형 Web UI 개발</li>
-                    </p>
-                </div>
-            </div>
-            <div class="flex flex-col gap-5">
-                <div class="flex gap-5">
-                    <div class="flex flex-col gap-2 w-1/3 border-l pl-3">
-                        <h3 class="font-bold">Tbell 현장실습</h3>
-                        <p class="text-gray-400">2022-7 ~ 2022-08, 1개월</p>
-                    </div>
-                    <div class="flex-1 flex flex-col gap-2">
-                        <h4 class="font-bold">Description</h4>
-                        <p class="text-gray-500">소프트웨어 테스트에 대한 현장실습을 진행하였습니다.</p>
-                        <h4 class="font-bold">What did I do?</h4>
-                        <p class="text-gray-500">
-                            <li class="text-gray-500">테스트 업무 교육 이수</li>
-                            <li class="text-gray-500">형상관리 툴 Atlassian JIRA 실습</li>
-                            <li class="text-gray-500">웅진 북클럽 안드로이드 앱, GS shop 웹 사이트 사용자 요구사항 블랙박스 테스트 (인수 테스트)</li>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="grid grid-cols-1 gap-10 border-t p-10">
-        <h1 class="font-bold text-2xl">개인 프로젝트</h1>
-        <div class="flex gap-5 mt-5">
-            <div class="flex flex-col gap-2 w-1/3 border-l pl-3">
-                <h3 class="font-bold">예쁜 글씨 홍보 사이트</h3>
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
 
-                <a class="text-blue-400" href="https://github.com/yudonggeun/handwriting_server"><img
-                        src="https://img.shields.io/badge/Github-181717?logo=github&logoColor=white">
-                </a>
-                <a class="text-blue-400" href="https://www.beautifulwriting.site">Link :
-                    https://www.beautifulwriting.site</a>
-                <div class="">
-                    <span class="border rounded-md px-1 bg-gray-200 text-gray-600 text-sm">spring</span>
-                    <span class="border rounded-md px-1 bg-gray-200 text-gray-600 text-sm">JPA</span>
-                    <span class="border rounded-md px-1 bg-gray-200 text-gray-600 text-sm">spring security</span>
-                    <span class="border rounded-md px-1 bg-gray-200 text-gray-600 text-sm">AWS(EC2, RDS, CloudFrount,
-                        S3,
-                        codeDeploy)</span>
-                    <span class="border rounded-md px-1 bg-gray-200 text-gray-600 text-sm">Docker</span>
-                    <span class="border rounded-md px-1 bg-gray-200 text-gray-600 text-sm">react</span>
-                    <span class="border rounded-md px-1 bg-gray-200 text-gray-600 text-sm">GitHub Actions</span>
-                    <span class="border rounded-md px-1 bg-gray-200 text-gray-600 text-sm">MySql</span>
-                </div>
-            </div>
-            <div class="flex-1 flex flex-col gap-3">
-                <h4 class="font-bold">Description</h4>
-                <p class="text-gray-500 whitespace-pre-line">기존의 오프라인 전단지를 온라인에서 홍보할 수 있는 웹서비스입니다.
-                </p>
-                <h4 class="font-bold">What did I do?</h4>
-                <li class="text-gray-500">Spring Security, Google OAuth, Kakao SNS 로그인 구현</li>
-                <li class="text-gray-500">Github Actions, AWS (Code deploy, S3)를 통한 배포 자동화 구현</li>
-                <li class="text-gray-500">Kong, Nginx, Spring boot를 도커라이징하여 웹 서비스 배포</li>
-                <li class="text-gray-500">PNGJ 오픈소스 이용하여 이미지 리사이징 및 압축을 통한 사이트 로딩 속도 2초에서 0.5초로 4배 개선</li>
-                <h4 class="font-bold">Retrospective<h4>
-                        <div class="flex flex-col gap-3">
-                            <li class="text-gray-500">보안 정보를 시스템 환경 변수를 통해 주입함으로써 도커 환경에서 배포 복잡도가 증가하는 문제가 발생, 설정 파일을 통한
-                                보안
-                                정보 관리가
-                                용이하다고 느꼈습니다.</li>
-                            <li class="text-gray-500">지속적인 로그인 상태 유지를 위해서 In memory database 적용하면 좋겠다고 느꼈습니다.</li>
-                            <li class="text-gray-500">도커 컴포즈를 적용하지 못한 점이 아쉬웠습니다.</li>
-                            <li class="text-gray-500">오케스트레이션 툴을 통한 컨테이너 관리 시스템을 구축하면 좋겠다고 느꼈습니다.</li>
-                        </div>
-            </div>
-        </div>
-        <div class="flex gap-5">
-            <div class="flex flex-col gap-2 w-1/3 border-l pl-3">
-                <h3 class="font-bold">블록체인을 이용한 기부 서비스</h3>
-                <a class="text-blue-400" href="https://github.com/yudonggeun/donation-BAPP-server"><img
-                        src="https://img.shields.io/badge/Github-181717?logo=github&logoColor=white"></a>
-                <a class="text-blue-400"
-                    href="https://baobab.scope.klaytn.com/account/0x2979C52Ad2a065DC406779c020ebe9a6b548ac22?tabId=txList">Link
-                    : 블록체인에 배포된 토큰 거래 내역</a>
-                <div>
-                    <span class="border rounded-md px-1 bg-gray-200 text-gray-600 text-sm">spring</span>
-                </div>
-            </div>
-            <div class="flex-1 flex flex-col gap-3">
-                <h4 class="font-bold">Description</h4>
-                <p class="text-gray-500">하이브리드 블록체인 Klaytn을 활용하여 현금을 대체한 코인으로 기부하는 서비스입니다. </p>
-                <h4 class="font-bold">What did I do?</h4>
-                <li class="text-gray-500">Klaytn network SDK caver-java를 이용한 블록체인 통신을 구현하였습니다.</li>
-                <li class="text-gray-500">Solidity를 이용한 ERC-20기반 smart contract를 블록체인에 배포하였습니다.</li>
-                <li class="text-gray-500">
-                    Spring boot를 이용하여 MVC 구조의 백엔드 어플리케이션을 개발 하였습니다.
-                    <ol class="mx-11 list-disc flex flex-col gap-2 mt-2 ">
-                        <li>포인트 충전, 환불, 기부 기능</li>
-                        <li>세션 기반 로그인 기능</li>
-                        <li>거래 내역 조회 및 생성 기능</li>
-                        <li>사용자 정보 CRUD</li>
-                    </ol>
-                </li>
-                <li class="text-gray-500">Spring boot, Thymeleaf를 이용하여 기부 컴페인 관리 페이지를 개발 하였습니다.</li>
-                <h4 class="font-bold">Retrospective<h4>
-                        <div class="flex flex-col gap-3">
-                            <li class="text-gray-500">블록체인의 신뢰성과 속도에 대한 타협점(Trade off)이 있음을 느낄 수 있었습니다.</li>
-                            <li class="text-gray-500">Spring boot를 이용하여 서버를 개발하는 경험을 할 수 있었습니다.</li>
-                            <li class="text-gray-500">실제 배포까지 이루어지지 않은 점이 아쉬웠습니다.</li>
-                        </div>
-            </div>
-        </div>
-    </div>
-    <div class="grid grid-cols-1 gap-5 border-t p-10">
-        <h1 class="font-bold text-2xl">최근 학습</h1>
-        <ol class="grid gap-5 px-2 border-l text-gray-500 list-none">
-            <li>강의 : 스프링 부트 시큐리티 & JWT 강의, 인프런
-                <a class="text-blue-400"
-                    href="https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0/dashboard">Link</a>
-            </li>
-            <li>서적 : Real MySQL, 위키북스</li>
-            <li>서적 : 객체지향의 사실과 오해, 위키북스</li>
-            <li>서적 : Effective JAVA, 인사이트</li>
-        </ol>
-    </div>
-    <div class="grid grid-cols-1 gap-5 border-t p-10">
-        <h1 class="font-bold text-2xl">자기소개</h1>
-        <div class="flex flex-col gap-16">
-            <div>
-                <h4 class="font-bold text-lg">백엔드 개발자가 되려는 이유는?</h4>
-                <div class="whitespace-pre-line ml-5 text-gray-500">
-                    어릴 적부터 컴퓨터 게임을 좋아했고, 윈도우PC에서 게임 설정 문제로 동작이 안되거나 고장났을 때, 게임을 하기 위해 그 문제를 밤새 해결했습니다.
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
 
-                    이러한 경험으로 자연스럽게 대학 전공을 컴퓨터공학과로 선택했고, 입학 후에 자료구조와 알고리즘, 프로그래밍 언어 등 전공을 공부하면서 동료들과 프로젝트를 진행할 때 어려운 문제를
-                    해결해 나가는 과정이 저에게 큰 성취감을 주었습니다.
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
 
-                    교내 스타트업에서 인턴으로 서비스를 개발하고, 개인 프로젝트에서 개발 및 운영을 경험하면서 시스템을 안정적이고, 효율적으로 만들고 데이터를 서빙하는 백엔드의 매력에 빠져 백엔드
-                    개발자가 되기로 결심했습니다.
-                </div>
-            </div>
-            <div>
-                <h4 class="font-bold text-lg">저는 이 기술에 관심이 있습니다.</h4>
-                <ol class="ml-5 pt-5 list-decimal">
-                    <li>마이크로 서비스 아키텍처</li>
-                    <ol class="whitespace-pre-line ml-5 list-disc text-gray-500">
-                        <li>Scale-out이 용이하여 서버의 리소스를 확장가능성있게 운영하는 것이 흥미롭습니다.</li>
-                        <li>장애의 범위를 제한하여 모놀리식 아키텍처에 비해 안정적인 운영이 가능할 수 있는 점이 놀라웠습니다.</li>
-                        <li>개발 언어의 제약을 넘어서 어플리케이션을 구성할 수 있다는 것에 매력을 느꼈습니다.</li>
-                    </ol>
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
 
-                    <li>데이터 베이스 성능 최적화</li>
-                    <ol class="whitespace-pre-line ml-5 list-disc text-gray-500">
-                        <li>데이터베이스 특징과 쿼리 실행 계획에 따라 속도 개선과 서비스에 미치는 영향을 알고 성능 최적화에 관심을 가지고 고민하고 있습니다.</li>
-                    </ol>
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
 
-                    <li>자동화</li>
-                    <ol class="whitespace-pre-line ml-5 list-disc text-gray-500">
-                        <li>업무 생산성을 위해서는 자동화가 필수라고 생각합니다. 테스트 자동화, 배포 자동화에 관심 있습니다.</li>
-                    </ol>
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
 
-                    <li>클린코드</li>
-                    <ol class="whitespace-pre-line ml-5 list-disc text-gray-500">
-                        <li>안정적인 서비스 운영을 위해서는 깔끔하고 명확한 코드가 중요하다고 생각합니다.</li>
-                        <li>코드를 리팩토링하면서 더 좋은 코드를 작성하기 위해 고민합니다.</li>
-                    </ol>
-                </ol>
-            </div>
-        </div>
-    </div>
-    <div class="grid grid-cols-1 gap-5 border-t p-10">
-        <h1 class="font-bold text-2xl">기타</h1>
-        <div class="flex flex-col gap-5">
-            <div class="flex gap-5">
-                <div class="flex flex-col gap-2 w-1/3 border-l pl-3">
-                    <h3 class="font-bold">한국공학대학교 컴퓨터공학부 근로장학생</h3>
-                    <p class="text-gray-400">2020-3 ~ 2022-06</p>
-                </div>
-                <div class="flex-1 flex flex-col gap-2">
-                    <h4 class="font-bold">Description</h4>
-                    <p class="text-gray-500">교내 학부사무실 근로장학생 활동을 하였습니다.</p>
-                    <h4 class="font-bold">What did I do?</h4>
-                    <p class="text-gray-500">
-                        <li class="text-gray-500">학부 컴퓨터 관리 보조</li>
-                        <li class="text-gray-500">학부 행정 처리 보조</li>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="grid grid-cols-1 gap-5 border-t p-10">
-        <h1 class="font-bold text-lg text-center">- 제 이력서를 읽어 주셔서 감사합니다 -</h1>
-    </div>
-</body>
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
 
-</html>
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="a77fbd64-5233-4c65-b818-1f75427a0fe9" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">📋</span></div><h1 class="page-title">안녕하세요. 신입 개발자 유동근입니다.</h1><p class="page-description"></p></header><div class="page-body"><h1 id="7390726a-77ee-4509-baec-abda39aef301" class="block-color-orange"><strong>Contact &amp; Channels</strong></h1><p id="1d55ca71-75f3-402d-9845-a52e98d2d75f" class="">📧 <strong><mark class="highlight-teal">Email.</mark></strong> <a href="mailto:ydong98@gmail.com">ydong98@gmail.com</a></p><p id="c226b40f-7ea1-4fe6-9a25-4de913e64aeb" class="">📑 <strong><mark class="highlight-teal">GitHub.</mark></strong> <a href="https://github.com/yudonggeun">https:/github.com/yudonggeun</a></p><p id="29ad4e41-98ac-49e2-b91d-4a42579c5162" class="">✏️ <strong><mark class="highlight-teal">Blog.</mark></strong> <a href="https://note-ydg.tistory.com/">https://note-ydg.tistory.com/</a></p><p id="17649eca-2ba7-48a8-a54b-237b7dacef30" class="">
+</p><h1 id="57ce0060-2246-424c-9da0-4e2325b1026d" class=""><mark class="highlight-orange">About Me</mark></h1><p id="3121eb42-61f4-40e9-8732-42cb4d95dd65" class="">저는 함께 성장하기 위해서,</p><ul id="4dacfeb9-a2a0-4ebe-bda4-19c1a82bce00" class="bulleted-list"><li style="list-style-type:disc">제가 알게된 것들을 공유합니다.</li></ul><ul id="bcc44f18-2690-4d66-baa0-b8b2b9acf2db" class="bulleted-list"><li style="list-style-type:disc">틀린 정보가 전달될 것을 경계하며 공식문서를 통해서 지식을 검증합니다.</li></ul><ul id="d67cfef8-9144-4844-87a2-b5e17dea8d27" class="bulleted-list"><li style="list-style-type:disc">타인의 문제를 함께 해결해보는 것을 좋아합니다.</li></ul><p id="39c781d0-08c9-412b-9bba-733381bc8d90" class="">
+</p><p id="0fddb85c-6e9a-41af-bffa-324f40caabab" class="">저의 성향은 요!</p><ul id="a44f91a2-adbe-4d0d-b32b-f6f430716cf9" class="bulleted-list"><li style="list-style-type:disc">자기 주도적으로 꾸준히 학습합니다.</li></ul><ul id="a9bc3020-81b2-4922-9392-aa23de6e1d80" class="bulleted-list"><li style="list-style-type:disc">문제가 생기면 그것이 해결될 때 까지 몰두합니다.</li></ul><ul id="58f20503-3cf2-432e-b6d5-473addaad35e" class="bulleted-list"><li style="list-style-type:disc">새로운 것을 적용하거나, 변경하는 데 두려움이 없습니다.</li></ul><ul id="a3403ea3-48d8-4d13-9338-8edfa628ca3b" class="bulleted-list"><li style="list-style-type:disc">쉽게 읽을 수 있고 쉽게 테스트할 수 있는 코드를 고민합니다.</li></ul><p id="82a42a82-a9c5-4fc9-9ea6-5153bf49ac00" class="">
+</p><hr id="9826ab3e-c3ae-48c7-ba5f-0db3ebcd3fe5"/><h1 id="a8cdf5d5-6967-49a1-9c26-78db082a17a9" class="block-color-orange">Stacks</h1><div id="2ee4abd0-bbea-40f0-880f-01eac507d451" class="column-list"><div id="edd79a1c-2667-4ee9-9ebc-7261e0155c57" style="width:50%" class="column"><h3 id="d5b4252a-ef57-4d64-8ba3-d888a63ea13c" class="">Backend</h3><ul id="ace81c6f-27ed-4336-908e-4426749c48ec" class="bulleted-list"><li style="list-style-type:disc">Java</li></ul><ul id="e207f04a-9193-4032-bec5-db106644f9c4" class="bulleted-list"><li style="list-style-type:disc">Spring Boot</li></ul><ul id="f9d918dc-8241-4d1c-afe7-1d5853dc05a5" class="bulleted-list"><li style="list-style-type:disc">Spring security</li></ul><ul id="025f0420-2c55-49dc-bebd-c992622359b2" class="bulleted-list"><li style="list-style-type:disc">JPA</li></ul></div><div id="dddce490-9c7c-4c84-afaa-b7a174dd04b0" style="width:50%" class="column"><h3 id="2e2ffa2f-dcc1-4101-a0fa-999e221ce74f" class="">DevOps</h3><ul id="1492be98-3761-4da8-899a-59dad3d3ebc6" class="bulleted-list"><li style="list-style-type:disc">Docker</li></ul><ul id="70b4891a-8b4f-46c8-986d-161b5bf24406" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-default">CI/CD - GitHub Actions, CodeDeploy</mark></li></ul><ul id="ce1fd48c-5046-47e7-a210-8eb3e96b210c" class="bulleted-list"><li style="list-style-type:disc">AWS - EC2, S3, RDS</li></ul></div></div><hr id="cf103e04-24aa-4c09-8252-579f0cb95237"/><h1 id="e8928d13-5c8f-4b5e-a12e-05d58680125e" class="block-color-orange">Toy Project</h1><h3 id="ec4b99c7-a15b-424e-a08c-24b845d20159" class="">웹 기반 실시간 그룹 채팅 서비스</h3><p id="eb2683b3-ea57-4c9f-bee9-554b16da4fb7" class="">23.09.13 ~ 23.09.22</p><p id="61ca2a32-0e6b-4a79-9aa5-b4fafdc34914" class="">📑 <strong><mark class="highlight-teal">GitHub. </mark></strong><a href="https://github.com/yudonggeun/chat_service">https://github.com/yudonggeun/chat_service</a></p><blockquote id="d4cf745e-7962-4dc8-8cad-b2cac8181c60" class="block-color-default">Websocket 이용한 서비스를 구현하여 Websocket 공부하고자 만든 개인 프로젝트입니다.
+프로젝트 상세 내용은 <a href="https://github.com/yudonggeun/chat_service">github</a>를 참고해주세요. 😁</blockquote><h3 id="28c066c9-6622-453f-af7a-09c67e7408ae" class="">Skills</h3><p id="ca7250ab-89e7-46d8-a830-78d805bd681e" class=""><code>STOMP</code> <code>Spring websocket</code> <code>Thymeleaf</code> <code>Docker compose</code> <code>RabbitMQ</code> <code>Redis</code></p><h3 id="0a7f9fed-5249-43a2-a745-3f316d9c6325" class="">What I Do</h3><ul id="3defb253-6974-4a95-ad47-75af956e038e" class="bulleted-list"><li style="list-style-type:disc">Stomp API 설계&amp;개발</li></ul><ul id="3fd8f648-0196-4886-9d41-f9e655feb6ee" class="bulleted-list"><li style="list-style-type:disc">RabbitMQ 이용한 메시지 라우팅</li></ul><ul id="4f69539a-70a1-4590-a222-685fba18dcd8" class="bulleted-list"><li style="list-style-type:disc">redis 통한 상태 관리</li></ul><ul id="d99201fc-56d2-4c2c-a4e2-9639d94acf17" class="bulleted-list"><li style="list-style-type:disc">scale out 고려한 아키텍처 사용</li></ul><ul id="b83732f4-2bba-4993-93a2-8c06a9c92d99" class="bulleted-list"><li style="list-style-type:disc">테스트 커버리지 93%</li></ul><p id="4b859ddb-3b7e-4dc3-b558-a3361a503f2d" class="">
+</p><hr id="82eb7fed-2145-43b2-ba98-c4eeb395ebdb"/><h3 id="a44e119d-e22b-4ec0-80b0-ea65fd9f5d16" class="">예쁜 글씨 홍보 사이트</h3><p id="43d03616-ccf2-4ea9-aecd-99716ffd6fdd" class="">22.11 - 23.02</p><p id="4b3f615b-5d0b-4de3-8fd0-7bc94e22cbd0" class="">📑 <strong><mark class="highlight-teal">GitHub. </mark></strong><a href="https://github.com/yudonggeun/handwriting_server">https://github.com/yudonggeun/handwriting_server</a></p><p id="4a0d93f8-2008-48dd-a4d0-3798c54a5cc1" class="">📑 <strong><mark class="highlight-teal">GitHub. </mark></strong><a href="https://github.com/yudonggeun/handwriting-promotion">https://github.com/yudonggeun/handwriting-promotion</a></p><p id="9a98bdb5-803c-46c6-b0bb-a8bf0b8db49f" class="">🌐 <strong><mark class="highlight-teal">Sample. </mark></strong><a href="https://www.beautifulwriting.site/">https://www.beautifulwriting.site/</a></p><blockquote id="1a6e5402-f95a-413d-a35c-00bb44b7565a" class="block-color-default">학교 홍보물 전단지를 만들어도 다시 웹 환경에서 배포되는 것을 보고 웹 페이지로 구성된 전단지를 만들면 어떨까? 라는 생각에서 시작한 개인 프로젝트입니다.</blockquote><h3 id="8a306349-cc6d-4fd0-8960-818dae070b25" class="">Skills</h3><p id="1754a67e-bec8-49dc-941d-30b0e013b0a4" class=""><code>Spring MVC</code> <code>Spring Boot</code> <code>Spring Security</code> <code>Spring Rest Docs</code> <code>JPA</code> <code>Docker compose</code> <code>AWS</code> <code>React</code> <code>GitHub Actions</code> </p><h3 id="9ef9440f-3fc7-4168-bba8-9ec93caac770" class="">What I Do</h3><ul id="47538b78-2903-4bf8-8cbc-57ac50b928f4" class="bulleted-list"><li style="list-style-type:disc">OAuth2 + Spring security + JWT 인증/인가 프로세스 구현</li></ul><ul id="fcb65a54-5b90-439a-9158-e587ca6c22bf" class="bulleted-list"><li style="list-style-type:disc">AWS EC2 + GitHub Actions + S3 + CodeDeploy CI/CD 구현</li></ul><ul id="c40d4e2d-1d2c-4b1e-a022-f1a7e83421aa" class="bulleted-list"><li style="list-style-type:disc">docker compose 이용한 개발 환경 구축</li></ul><ul id="fe0ebdc7-2b36-4ab7-a2ca-ebaa7ca0b8e0" class="bulleted-list"><li style="list-style-type:disc">RESTful API 설계&amp;개발</li></ul><ul id="b8eb6d11-d459-4427-bebe-9c1789a8ad7c" class="bulleted-list"><li style="list-style-type:disc">API 테스트 및 문서 작성</li></ul><ul id="098eb53b-84c5-4f0e-beec-a4e61a843129" class="bulleted-list"><li style="list-style-type:disc">테스트 커버리지 74%</li></ul><hr id="05daf2b8-acf1-42bc-8d49-de74e3467776"/><div id="05aa03ad-78f4-4759-8254-707a4035230f" class="column-list"><div id="ba8bfac8-c164-4938-8f72-2283fc2b104b" style="width:50%" class="column"><h1 id="4300556f-691b-49a6-86f8-4fc1f5feb489" class="block-color-orange">Education</h1><h3 id="71391288-9de6-4b35-850b-99091507a6eb" class="">한국공학대학교</h3><p id="1396d88b-9412-4d02-9a9b-46beda13420b" class=""><em>2017.03 - 2023.02 </em>컴퓨터 공학부 </p><p id="0bf21a7c-8f51-4655-84e6-8e3feee98185" class="">
+</p></div><div id="d87c9fd3-dc65-4f0e-8b0d-e2918167333b" style="width:50%" class="column"><h1 id="e63c8632-749b-47d8-8f50-45d417137493" class="block-color-orange">Certificate</h1><h3 id="aebf2fac-9bb5-49ed-81f4-79fa5e606c59" class="">정보 처리 기사 </h3><p id="e5604598-aac7-4ac2-8381-8db4ee421d1f" class="">2023.09.01</p><h3 id="437188ff-46e2-49a2-9acd-f961e9ad16f7" class="">CKA (Certified Kubernetes Administrator)</h3><p id="f73aafa2-3f04-4531-a0a1-10804f715db4" class="">2023.07.31</p></div></div><hr id="9e6e6aa0-fa18-46e1-bc5f-214bb09a5294"/></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
