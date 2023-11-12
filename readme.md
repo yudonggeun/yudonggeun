@@ -8,15 +8,14 @@
 **함께 성장하기 위해서?**
 
 - 지식을 공유합니다.
-- 동료와 같이 문제를 해결합니다.
+- 문제 해결을 도와주는 것을 좋아합니다.
+- 피드백을 중요하게 생각합니다.
 
 **개발 성향은?**
 
 - 꾸준히 학습합니다.
 - 테스트 코드를 좋아합니다.
 - 공식 문서를 좋아합니다.
-- MSA에 관심이 많습니다.
-
 
 ## Stacks
 ### Backend
@@ -26,3 +25,5 @@
 ### DevOps
 
 - `GitHub Actions` `AWS` `Kubernetes`
+
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=youdong98)](https://solved.ac/youdong98/)
