@@ -25,5 +25,3 @@
 ### DevOps
 
 - `GitHub Actions` `AWS` `Kubernetes`
-
-[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=youdong98)](https://solved.ac/youdong98/)
