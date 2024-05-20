@@ -20,7 +20,7 @@
 ## Stacks
 ### Backend
 
-- `Java` `Spring` `JPA` `MySql`
+- `kotlin` `Java` `Spring` `JPA` `MySql`
 
 ### DevOps
 
