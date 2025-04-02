@@ -13,7 +13,7 @@
 
 if you want to see more detail, click the link!
 
-[https://github.com/yudonggeun/yudonggeun/wiki/Portfolio-Index](https://github.com/yudonggeun/yudonggeun/wiki/Portfolio-Index)
+[https://github.com/yudonggeun/yudonggeun/wiki](https://github.com/yudonggeun/yudonggeun/wiki)
 
 ## **Contact & Channels**
 
